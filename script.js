@@ -34,3 +34,4 @@ function search() {
         }
     }
 }
+const toggleMenu = () => document.body.classList.toggle("open");
