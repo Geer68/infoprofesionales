@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,22 +21,16 @@
       rel="stylesheet"
     />
     <link href="./styles.css" rel="stylesheet" />
-  </head>
-  <body>
+</head>
+<body>
     <nav class="navbar">
       <button onclick="toggleMenu()" class="burger"></button>
       <button class="button">Home</button>
       <div class="dropdowns">
         <div class="dropdown">
           <button class="button">
-            Médicos
-            <img src="chevron.svg" />
+            <a href="index.html">Médicos</a>
           </button>
-          <div class="dropdown-menu">
-            <button>UX/UI Design</button>
-            <button>Web Applications</button>
-            <button>SEO Advice</button>
-          </div>
         </div>
         <div class="dropdown">
           <button class="button"><a href="ventanillas.html">Ventanillas</a>
@@ -63,1190 +52,1187 @@
         </div>
       </div>
     </nav>
-    <div class="novedades">
-        <article>
-        <h2>Novedades</h2>
-        <p>A PARTIR DEL 7/11 DERMATOLOGOS NO ACEPTAN PREVENCION</p>
-        </article>
-    </div>
-    <div class="table">
-        <div class="input">
-            <input type="text" id="myInput" onkeyup="search()" placeholder="Busca por profesional" title="Type in a name">
-            <input type="text" id="myInput2" onkeyup="search()" placeholder="Busca por servicio" title="Type in a name">
+    <main class="medicos">
+        <div class="tableContainer">
+            <div class="input">
+                <input type="text" id="myInput" onkeyup="search()" placeholder="Busca por profesional" title="Type in a name">
+                <input type="text" id="myInput2" onkeyup="search()" placeholder="Busca por servicio" title="Type in a name">
+            </div>
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:30%;">Profesional</th>
+                    <th style="width:40%;">Servicio</th>
+                    <th style="width:30%;">Comentarios</th>
+                </tr>
+                <tr>
+                    <td>ABDALA, Jorge Aureliano</td>	
+                    <td>CIRUGIA TORÁXICA</td>
+                    <td>No recibe agua</td>
+                </tr>
+                <tr>
+                    <td><a href="prof/abdopablo.html">ABDO, Pablo Sebastian</a></td>	
+                    <td>TRAUMATOLOGÍA HOMBRO Y RODILLA</td>
+                </tr>
+                <tr>
+                    <td>ACEVEDO, Emilia</td>	
+                    <td>NUTRICIÓN</td>
+                </tr>
+                <tr>
+                    <td>AFFRONTI, Pablo Marcelo</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>AGÜERO MENI, Maria Gabriela</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>ALBINO, German Rodolfo</td>	
+                    <td>UROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ALICO, Eliana</td>
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>ALVAREZ, Analia</td>
+                    <td>DIABETOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ANTON, Natalia</td>	
+                    <td>NUTRICIÓN</td>
+                </tr>
+                <tr>
+                    <td>Aquino, María Belén</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>ARAGON, Adrian Javier Edgardo</td>	
+                    <td>CIRUGIA TORÁXICA</td>
+                </tr>
+                <tr>
+                    <td>ARBESU, Mario Guillermo</td>	
+                    <td>HEMATOLOGÍA, EXTRACCIONES, PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>ARENAS, GABRIELA</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>ARGERICH, María Inés</td>	
+                    <td>DIABETOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ARREGHINI, Rita Ana Valeria</td>	
+                    <td>INFECTOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ARRIETA, Ivana Sabrina</td>	
+                    <td>NUTRICIÓN</td>
+                </tr>
+                <tr>
+                    <td>ARRUPE, Matias Fernando</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ATENCIO, Fernando</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>ATENCIO, Jorge Alejandro</td>	
+                    <td>NEUROCIRUGÍA</td>
+                </tr>
+                <tr>
+                    <td>BAIGORRIA JAYAT, Ariel Oscar</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>BAIGORRIA JAYAT, Ariel Oscar - HOLTER</td>	
+                    <td>HOLTER</td>
+                </tr>
+                <tr>
+                    <td>BALLADORES, Victor</td>	
+                    <td>TRAUMATOLOGÍA COLUMNA</td>
+                </tr>
+                <tr>
+                    <td>BARRAZA FLORES, Carolina</td>	
+                    <td>NEONATOLOGÍA, PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>BASCO, Gabriela Analia</td>	
+                    <td>OBSTERICIA</td>
+                </tr>
+                <tr>
+                    <td>BENAVIDEZ, Manuel</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>BERNASCONI, Carlos Alfredo</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>BERNASCONI, Carlos Alfredo ECOCARDIOGRAMA</td>	
+                    <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>BERNASCONI, Pablo</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>BERNASCONI, Pablo ECOCARDIOGRAMA</td>	
+                    <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>BERRA, MARIA GISELA</td>	
+                    <td>GINECOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>BERTANI, Diego Javier</td>	
+                    <td>COLOPROCTOLOGIA </td>
+                </tr>
+                <tr>
+                    <td>BERTOLOTTI, Favio Roberto</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>BILBAO, Oscar Alberto</td>	
+                    <td>COLOPROCTOLOGIA </td>
+                </tr>
+                <tr>
+                    <td>BIRMAN, Isaac Alejandro</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>BLOCK, Solange Jesica</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>BOIERO, Bruno Pablo</td>	
+                    <td>NEUROCIRUGÍA; COLUMNA-CEREBRO</td>
+                </tr>
+                <tr>
+                    <td>BRANZELLO, Emanuel Eduardo</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>BUFALIZA, Jorge</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>CALIGLIORE, María Pía</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>CAMPANELLO, LAURA VALERIA</td>	
+                    <td>GINECOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CAMUS, Walter</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>CANTALE, CARINA PAULA</td>	
+                    <td>CARDIOLOGÍA (ESPECIAL)</td>
+                </tr>
+                <tr>
+                    <td>CANZONIERI, Pablo Jesus</td>	
+                    <td>FLEBOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CARDONE, Romina Paula</td>	
+                    <td>INFECTOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CARENA, Maria Paula</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>CARLUCCI, Andrea</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>CARMONA, Juan Manuel</td>	
+                    <td>CIRUGIA TORÁXICA</td>
+                </tr>
+                <tr>
+                    <td>CARRA, Joaquin Andres</td>	
+                    <td>TRAUMATOLOGÍA HOMBRO Y RODILLA</td>
+                </tr>
+                <tr>
+                    <td>CARRIZO, Maira Jennifer</td>	
+                    <td>OBSTERICIA</td>
+                </tr>
+                <tr>
+                    <td>CASSATA, Andrea Paola</td>	
+                    <td>INFECTOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CASSONE, Eduardo Jose (hijo)</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>CASTELLER, Maria Gabriela</td>	
+                    <td>GINECOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CASTILLO, MARCIA LORENA</td>	
+                    <td>HEMATOLOGÍA PEDIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>CASTRO, Susana Estela</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>CHAPARRO, German Andres</td>	
+                    <td>TRAUMATOLOGÍA TOBILLO Y PIE</td>
+                </tr>
+                <tr>
+                    <td>CHAVES, Maria Eva</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>CHIAPETTA, Juan Gustavo</td>	
+                    <td>UROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CIOCCA, Leonardo Andres</td>	
+                    <td>MASTOLOGIA (PATOLOGIA MAMARIA)</td>
+                </tr>
+                <tr>
+                    <td>COLOMA, Jose Maria</td>	
+                    <td>NEUROCIRUGÍA</td>
+                </tr>
+                <tr>
+                    <td>CONSOLI, Miguel Eduardo</td>	
+                    <td>UROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CORREA, Leonardo</td>	
+                    <td>GINECOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CORTS, Paola Bibiana</td>	
+                    <td>NUTRICIÓN</td>
+                </tr>
+                <tr>
+                    <td>CRIVELLI, Jose Luis</td>	
+                    <td>ANESTESIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>CUTRONI, Francisco Roberto</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>D´AGOSTINO, María Cecilia</td>	
+                    <td>PSICOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>DAFFRA, Pamela Ruth</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>D'AGOSTINO, Maria Cecilia</td>	
+                    <td>PSICOLOGÍA PEDÍATRICA</td>
+                </tr>
+                <tr>
+                    <td>D'AMELIO, Gabriela</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>DE LA FUENTE ALBARRA, Maria Elisa</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>DENSITOMETRIA</td>	
+                    <td>DENSITOMETRIA</td>
+                </tr>
+                <tr>
+                    <td>DESPLEGAMIENTO CORTICAL</td>	
+                    <td>DESPLEGAMIENTO CORTICAL</td>
+                </tr>
+                <tr>
+                    <td>DIAZ, Alberto</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>DIAZ, Ezequiel</td>	
+                    <td>TRAUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>DIFUSION-PERFUSION</td>	
+                    <td>DIFUSIÓN-PERFUSIÓN</td>
+                </tr>
+                <tr>
+                    <td>DOMINGUEZ, Andrés</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>DOMINGUEZ, Dolores</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>DONADI, Andres Alfredo</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>DONNA, Ricardo Federico (hijo)</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>DUBOUE, Luis Fernando</td>	
+                    <td>OFTALMOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ECHEGARAY, Maria Sara</td>	
+                    <td>GINECOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ECODOPPLER-ECOGRAFIA</td>	
+                    <td>ECODOPPLER-ECOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>EEDE, Gabriela Veronica</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>ELECTROCARDIOGRAMA (ECG)</td>	
+                    <td>ELECTROCARDIOGRAMA (ECG)</td>
+                </tr>
+                <tr>
+                    <td>ERGOMETRIAS</td>	
+                    <td>ERGOMETRIAS</td>
+                </tr>
+                <tr>
+                    <td>ESCANILLA, Marcela Beatriz</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>ESPECTROSCOPIA</td>	
+                    <td>ESPECTROSCOPIA</td>
+                </tr>
+                <tr>
+                    <td>ESPINOGRAMA/MEDICION MMII</td>	
+                    <td>ESPINOGRAMA/MEDICION MMII</td>
+                </tr>
+                <tr>
+                    <td>FARRANDO, Soledad</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>FERNANDEZ LLANOS, Federico</td>	
+                    <td>TRAUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>FERNANDEZ, Gaston</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>FIGUEROA, EDUARDO</td>	
+                    <td>OTORRINOLARINGOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>FILICE, Paula Andrea</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>FORMAGGIA, Marcos Alberto</td>	
+                    <td>CIRUGÍA ESTÉTICA, PLÁSTICA Y REPARA</td>
+                </tr>
+                <tr>
+                    <td>FORMAGGIA, Valentina</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>FORTE, Daniel Francisco</td>	
+                    <td>FLEBOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>FUEGO, Segundo Mariano</td>	
+                    <td>TRAUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>FUNES, Carlos Ramon</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>GALINDO GUIÑAZU, Marcelo Miguel</td>	
+                    <td>OFTALMOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GALLARDO, Nestor Adrian</td>	
+                    <td>TRAUMATOLOGÍA MANO Y MMSS</td>
+                </tr>
+                <tr>
+                    <td>GALLINA, Paula Mariana</td>	
+                    <td>OFTALMOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GAMBOA, Juan Manuel</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>GARCIA AMORE, MARIA SABRINA</td>	
+                    <td>DERMATOLOGÍA PEDIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>GARCIA CICCARELLI, Agustin</td>	
+                    <td>REUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GARCIA ORTEGA, Nicolas Leonardo</td>	
+                    <td>FLEBOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GARCIA, Emilio Jose</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>GARCIA, Ezequiel</td>	
+                    <td>TRAUMATOLOGÍA COLUMNA</td>
+                </tr>
+                <tr>
+                    <td>GENOVESI, Eduardo Marcelo</td>	
+                    <td>TRAUMATOLOGÍA HOMBRO Y RODILLA</td>
+                </tr>
+                <tr>
+                    <td>GHAZOUL, Mariam Yasmin</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>GIL, Eliana Mariana</td>	
+                    <td>NEUMONOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GISBERT RUTTI, Patricia Ines</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>Giunta, Maria Victoria</td>	
+                    <td>OSTEOPATÍA</td>
+                </tr>
+                <tr>
+                    <td>GOMEZ CENTURIÓN, Santiago Andrés</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>GOMEZ DIEZ, Valentin Uriel</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>GOMEZ TEJADA, Sebastian</td>	
+                    <td>TRAUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GOMEZ, Susana</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>GONZALEZ ANNUNZIATA, Diego Ignacio</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>GONZALEZ RUIZ, Maria Isabel</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GONZALEZ VIESCAS, Juan Manuel</td>	
+                    <td>TRAUMATOLOGÍA COLUMNA</td>
+                </tr>
+                <tr>
+                    <td>GONZALEZ, Nadya Gabriela</td>	
+                    <td>OBSTERICIA</td>
+                </tr>
+                <tr>
+                    <td>GONZALEZ, Sofia Federica</td>	
+                    <td>ENDOCRINOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>GUAYAMA, Santiago Raul</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>GUIROY, Alfredo Jose</td>	
+                    <td>TRAUMATOLOGÍA COLUMNA</td>
+                </tr>
+                <tr>
+                    <td>GUTIERREZ, Mario Hernan</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>GUZZANTI, Diego</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>HAUILLE, Emilia Fernanda</td>	
+                    <td>NEUMONOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>HERRERO, Sandra Silvina Trinidad</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>HOFFMANN, María Paula</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>I.B.C. LABORATORIO, Srl-MICROBIOLOGIA</td>	
+                    <td>MICROBIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>JORQUERA, Marcelo Salvador</td>	
+                    <td>CIRUGÍA ESTÉTICA, PLÁSTICA Y REPARA</td>
+                </tr>
+                <tr>
+                    <td>KABACOFF, Julio Sebastian</td>	
+                    <td>NEONATOLOGÍA, PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>KRISTAL, Marcos</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>LABORATORIO C.D.C., S.a.</td>	
+                    <td>CORTISOL MATINAL</td>
+                </tr>
+                <tr>
+                    <td>LABORATORIO C.D.C., S.a. - BACTERIOLOGIA</td>	
+                    <td>PREPARACIONES ESTUDIOS</td>
+                </tr>
+                <tr>
+                    <td>LABORATORIO C.D.C., S.a. - HISOPADOS COVID</td>	
+                    <td>HISOPADOS COVID</td>
+                </tr>
+                <tr>
+                    <td>LABORATORIO C.D.C., S.a.-CURVA DE GLUCOSA</td>	
+                    <td>CURVA DE GLUCOSA</td>
+                </tr>
+                <tr>
+                    <td>LAMACCHIA, Hector Mario Nuncio</td>	
+                    <td>NEFROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>LARA, María Eugenia</td>	
+                    <td>REUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>LAURO, Florencia</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>LECETA, Vanina</td>	
+                    <td>NUTRICIÓN</td>
+                </tr>
+                <tr>
+                    <td>LEMBO, Mario</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>LEMBO, Mario Ariel</td>	
+                    <td>DIAGNÓSTICO POR IMAGENES</td>
+                </tr>
+                <tr>
+                    <td>LEMOS ZARAGOZA, María Eva</td>	
+                    <td>CARDIOLOGÍA INFANTIL</td>
+                </tr>
+                <tr>
+                    <td>LEYTES BEJAS, Matias</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>LEYTON, Melisa</td>	
+                    <td>NUTRICIÓN</td>
+                </tr>
+                <tr>
+                    <td>Lizana, Jeremías</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA - IVE</td>
+                </tr>
+                <tr>
+                    <td>LLENSA, Jorge Emilio</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>LLORET, Maria Laura</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>LONGHIN, Cintia Vanina</td>	
+                    <td>DIAGNÓSTICO POR IMAGENES</td>
+                </tr>
+                <tr>
+                    <td>LOPEZ ALBARRACIN, Maria Laura</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>LOPEZ ALBARRACIN, Maria Laura - HOLTER</td>	
+                    <td>HOLTER</td>
+                </tr>
+                <tr>
+                    <td>LOPEZ MORAN, VICTORIA</td>	
+                    <td>NEUMONOLOGÍA PEDIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>LOPEZ, Oscar Alejandro</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>LUNATI, Maria Cristina</td>	
+                    <td>DIABETOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>LUQUE, Osvaldo Martin</td>	
+                    <td>TRAUMATOLOGÍA RODILLA TOBILLO</td>
+                </tr>
+                <tr>
+                    <td>MAGISTOCCHI, Franco</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>MALLEA, Sandra</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>MAMOGRAFIA</td>	
+                    <td>MAMOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>MAMPEL, Alejandra</td>	
+                    <td>GENÉTICA; PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>MANGANIELLO, Karina</td>	
+                    <td>NEUMONOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>MANSON, Barbara</td>	
+                    <td>NEUMONOLOGÍA PEDIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>MANZUR, Isabel Alejandra</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>MARCANTONI, Aldo</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>MARCELLINO, Guillermo</td>	
+                    <td>OFTALMOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>MARTIN, Gabriela Alejandra</td>	
+                    <td>FONOAUDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>MARTIN, Noelia Grisel</td>	
+                    <td>GINECOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>MARTINA ARRIGO, Ailin Janet</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>MARTINEZ ALEMANY, Carlos Gustavo</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>MARTINEZ COCCOLA, Hugo Federico</td>	
+                    <td>OTORRINOLARINGOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>MARTINEZ HERRERO, Mariela</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>MARTINEZ, Francisco</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>MASSACESI, Oscar Damian</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>MASTRONARDI LOMBARDI, Valentina</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>MATUS, Daniel Alejandro</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>MEDICINA FETAL/SCREENING</td>	
+                    <td>ECOGRAFÍA OBSTÉTRICA</td>
+                </tr>
+                <tr>
+                    <td>MERCADO, Jose Osvaldo</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>MINATTI, Walter Ramon</td>	
+                    <td>COLOPROCTOLOGIA </td>
+                </tr>
+                <tr>
+                    <td>MOLLAR, Silvia Marcela</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>MONDINI, Mauricio Javier</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>MONTENERO, Maria Eliana</td>	
+                    <td>OBSTERICIA</td>
+                </tr>
+                <tr>
+                    <td>MORALES, Sergio Agustin</td>	
+                    <td>NEONATOLOGÍA, PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>MUGIANESI ARAUJO, Emiliano</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>NEFA, Jorge</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>NIELLA, Marcela Beatriz</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>NIELLA, Marcela Beatriz - PRESUROMETRIA</td>	
+                    <td>PRESUROMETRÍA</td>
+                </tr>
+                <tr>
+                    <td>NIELLA, Marcela Beatriz ECOCARDIOGRAMA</td>	
+                    <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>NIELLA, Natalia Lorena</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>NIELLA, Natalia Lorena - PRESUROMETRIA</td>	
+                    <td>PRESUROMETRÍA</td>
+                </tr>
+                <tr>
+                    <td>NIELLA, Natalia Lorena ECOCARDIOGRAMA</td>	
+                    <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>No directas de clínica-Imágenes</td>	
+                    <td>No directas de clínica-Imágenes</td>
+                </tr>
+                <tr>
+                    <td>NOTTI GNAZZO, Alberto Ruben</td>	
+                    <td>CIRUGIA DE CABEZA Y CUELLO  (NO RECIBE DASUTEN)</td>
+                </tr>
+                <tr>
+                    <td>NUÑEZ, Mariano Andres</td>	
+                    <td>UROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>OFTALMOLOGIA ESTUDIOS</td>	
+                    <td>OFTALMOLOGÍA ESTUDIOS</td>
+                </tr>
+                <tr>
+                    <td>OJEDA, Alejandra</td>	
+                    <td>ENDOCRINOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>OLCESE, Ernesto Gabriel</td>	
+                    <td>MASTOLOGIA (PATOLOGIA MAMARIA)</td>
+                </tr>
+                <tr>
+                    <td>OLGUIN, Fernando Andres</td>	
+                    <td>NEUROCIRUGÍA; COLUMNA</td>
+                </tr>
+                <tr>
+                    <td>OMELANCZUK, Pablo Esteban</td>	
+                    <td>CIRUGÍA BARIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>OSTEOPOROSIS</td>	
+                    <td>OSTEOPOROSIS</td>
+                </tr>
+                <tr>
+                    <td>PACE, Analia Fernanda</td>	
+                    <td>NEUROCIRUGÍA</td>
+                </tr>
+                <tr>
+                    <td>PAEZ, Mauro David</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>PALOMBA, Cristian Oscar</td>	
+                    <td>OBSTETRICIA, ECOGRAFIA GEN</td>
+                </tr>
+                <tr>
+                    <td>PARRA, Luis Alejandro</td>	
+                    <td>NEUMONOLOGÍA INFANTIL</td>
+                </tr>
+                <tr>
+                    <td>PELAYES, Pablo</td>	
+                    <td>DOLOR Y CUIDADOS PALIATIVOS</td>
+                </tr>
+                <tr>
+                    <td>PENA, Ariel Eduardo</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>PEÑAFORT, Fernando Andres</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>PERALTA, Gonzalo</td>	
+                    <td>NEUMONOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>PETRA, Eliana Belen</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>PETRICCA, Juan Pablo</td>	
+                    <td>INFECTOLOGÍA PEDIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>PILOT, Mauricio German</td>	
+                    <td>UROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>PITHOD, Daniel Eduardo</td>	
+                    <td>NEUROCIRUGÍA; COLUMNA-CEREBRO</td>
+                </tr>
+                <tr>
+                    <td>PITRELLA, Alicia</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>PLATI, Silvina Alejandra</td>	
+                    <td>NEUROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>POLITO, Roque Alberto</td>	
+                    <td>TRAUMATOLOGÍA RODI TOBIL Y PIE</td>
+                </tr>
+                <tr>
+                    <td>POLLA, Gabriela</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>PONCE, Adriana Roxana</td>	
+                    <td>FONOAUDIOLOGÍA PEDIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>PONT LEZICA, Diego</td>	
+                    <td>TRAUMATOLOGÍA MANO</td>
+                </tr>
+                <tr>
+                    <td>PUERTAS, Eduardo Juan</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>PUERTAS, Eduardo Juan ECOCARDIOGRAMA</td>	
+                    <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>QUARTARA, Maria Eugenia</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>QUIROGA MARTINEZ, Maria Rosario</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>QUISTAPACE SALAS, Maria Soledad</td>	
+                    <td>NEUROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>RAGAZZONE, Marìa Fernanda</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>RAINA, Maria Belen</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>REINOSO, Erika Mabel</td>	
+                    <td>OBSTERICIA</td>
+                </tr>
+                <tr>
+                    <td>RESONANCIAS</td>	
+                    <td>RESONANCIAS</td>
+                </tr>
+                <tr>
+                    <td>RIMOLO, Maria Belen</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>RIVAROLA, Guillermo</td>	
+                    <td>TRAUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>RIVAS, Daniela</td>	
+                    <td>TRATAMIENTO DEL DOLOR Y CUIDADOS PALIATIVOS</td>
+                </tr>
+                <tr>
+                    <td>RMN MULTIPARAMETRICA PROSTATA</td>	
+                    <td>RMN MULTIPARAMETRICA PROSTATA</td>
+                </tr>
+                <tr>
+                    <td>ROCHET, Sofia Beatriz</td>	
+                    <td>FLEBOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>RODRIGUEZ FUENTES, Walter Pablo</td>	
+                    <td>TRAUMATOLOGÍA DE RODILLA</td>
+                </tr>
+                <tr>
+                    <td>RODRIGUEZ LAPENNA, YACO DENIS </td>	
+                    <td>TRAUMATOLOGÍA COLUMNA</td>
+                </tr>
+                <tr>
+                    <td>RODRIGUEZ ROLFI, LUCIANA</td>	
+                    <td>NEUROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>Rodriguez, Nicolas</td>	
+                    <td>QUIROPRAXIA</td>
+                </tr>
+                <tr>
+                    <td>ROJAS, Matias</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>ROMANELLO, Carla Agustina</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ROMERA, Mario Adrian</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>ROMERO, Natalia Soledad</td>	
+                    <td>HEMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ROSSI, Javier Antonio</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>ROVER, Gustavo Daniel</td>	
+                    <td>NEONATOLOGÍA, PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>ROYO, Pedro Francisco</td>	
+                    <td>TRAUMATOLOGÍA INFANTIL</td>
+                </tr>
+                <tr>
+                    <td>RUBIES, Gonzalo Fernando</td>	
+                    <td>TRAUMATOLOGÍA RODILLA Y CADERA</td>
+                </tr>
+                <tr>
+                    <td>RUBIRA, Magali</td>	
+                    <td>INSUFICIENCIA CARDÍACA</td>
+                </tr>
+                <tr>
+                    <td>RX RADIOGRAFIAS ODONTOLOGICAS</td>	
+                    <td>RX RADIOGRAFIAS ODONTOLOGICAS</td>
+                </tr>
+                <tr>
+                    <td>RX Seriadas y Videodeglución(Radiog)</td>	
+                    <td>RX Seriadas y Videodeglución(Radiog)</td>
+                </tr>
+                <tr>
+                    <td>SACCHI, Carlos Gustavo</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>SAEZ, Guillermo Javier</td>	
+                    <td>CIRUGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>SAGAS MOLE, Agustin Nahuel</td>	
+                    <td>TRAUMATOLOGIA BRAZO,HOMBRO, MS</td>
+                </tr>
+                <tr>
+                    <td>SANCHEZ, Angela Maria Magali</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>SANCHEZ, Claudio Andrés</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>SANCHEZ, Federico Jose</td>	
+                    <td>NEUROCIRUGÍA</td>
+                </tr>
+                <tr>
+                    <td>SANCHEZ, Francisco</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>SANCHEZ, Sebastian Jose</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>SANTAMARINA, Rodrigo Daniel - NEUROLOGIA ESTUDIOS</td>	
+                    <td>NEUROLOGÍA, neurologia ESTUDIOS</td>
+                </tr>
+                <tr>
+                    <td>SARACCO, Alejandro Javier</td>	
+                    <td>CARDIOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>SARDELLA, Maria Laura</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>SARDI, Ricardo Javier</td>	
+                    <td>NEFROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>SARRADELL, Sergio Daniel</td>	
+                    <td>OTORRINOLARINGOLOGÍA PEDIATRICA</td>
+                </tr>
+                <tr>
+                    <td>SAUCEDO, Veronica Rocio</td>	
+                    <td>ECOGRAFÍA GENERAL, MAMOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>SAVINA PEZUTTI, Mariela Soledad</td>	
+                    <td>ENDOCRINOLOGÍA</td>
+        
+                </tr>
+                <tr>
+                    <td>SCAGLIOTTI, Luis</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>SCARLATTI, Fernanda</td>	
+                    <td>PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>SCHERL, Humberto David</td>	
+                    <td>CIRUGÍA PEDIÁTRICA</td>
+                </tr>
+                <tr>
+                    <td>SEMINARA, Martin</td>	
+                    <td>OFTALMOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>SEMINO, Silvana</td>	
+                    <td>ANATOMÍA PATOLÓGICA</td>
+                </tr>
+                <tr>
+                    <td>SINZIG, German Eduardo</td>	
+                    <td>NEONATOLOGÍA, PEDIATRÍA</td>
+                </tr>
+                <tr>
+                    <td>SOLAVALLONE, Vanina Alejandra</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>SOSA, Barbara Daniela</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>SOTTANO LARZABAL, Maria Eugenia</td>	
+                    <td>NEUROLOGÍA; EPILEPSIA</td>
+                </tr>
+                <tr>
+                    <td>SPITZ, Bernardo Noe ECOCARDIOGRAMA</td>	
+                    <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
+                </tr>
+                <tr>
+                    <td>SUSO, Leticia Noemi</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>TERRAZA, Laura Lourdes</td>	
+                    <td>GINECOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>TOMAS. Silvio</td>	
+                    <td>OTORRINOLARINGOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>TOMOGRAFIA (TC)</td>	
+                    <td>TOMOGRAFIA (TC)</td>
+                </tr>
+                <tr>
+                    <td>TOMOGRAFIA (TC) BOEDO</td>	
+                    <td>TOMOGRAFIA (TC) BOEDO</td>
+                </tr>
+                <tr>
+                    <td>TORRES, Carlos</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>TORRES, Gustavo Alberto</td>	
+                    <td>NEUMONOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VALDEMOROS, Maria Florencia</td>	
+                    <td>INMUNOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VALENTINI, Pablo Nicolas</td>	
+                    <td>UROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VANELLA, Maria Jose</td>	
+                    <td>ECOGRAFÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>VEGA, Matias Ernesto</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VELA, Manuela</td>	
+                    <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
+                </tr>
+                <tr>
+                    <td>VENDRELL, Lucas Martin</td>	
+                    <td>UROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VERA CASTILLA, Carolina</td>	
+                    <td>CLINICA MÉDICA</td>
+                </tr>
+                <tr>
+                    <td>VEREDA, Francisco</td>	
+                    <td>TRAUMATOLOGÍA GENERAL</td>
+                </tr>
+                <tr>
+                    <td>VICTORIA, Romina</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VILDOZA, Ricardo</td>	
+                    <td>TRAUMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VIOLINI, Valeria</td>	
+                    <td>DERMATOLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>VOLUMETRIA HEPATICA</td>	
+                    <td>VOLUMETRIA HEPÁTICA</td>
+                </tr>
+                <tr>
+                    <td>YANZON, Carlos Sebastian</td>	
+                    <td>TRAUMATOLOGÍA RODILLA Y CADERA</td>
+                </tr>
+                <tr>
+                    <td>YAÑEZ, Federico</td>	
+                    <td>GASTROENTEROLOGÍA</td>
+                </tr>
+                <tr>
+                    <td>ZABALUA, Silvina Maria</td>	
+                    <td>DIABETOLOGÍA</td>
+                </tr>
+            </table>
         </div>
-        <table id="myTable">
-            <tr class="header">
-                <th style="width:20%;">Profesional</th>
-                <th style="width:50%;">Servicio</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="index2.html">ABDALA, Jorge Aureliano</a>
-                    </td>	
-                <td>CIRUGIA TORÁXICA</td>
-            </tr>
-            <tr>
-                <td>ABDO, Pablo Sebastian</td>	
-                <td>TRAUMATOLOGÍA HOMBRO Y RODILLA</td>
-            </tr>
-            <tr>
-                <td>ACEVEDO, Emilia</td>	
-                <td>NUTRICIÓN</td>
-            </tr>
-            <tr>
-                <td>AFFRONTI, Pablo Marcelo</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>AGÜERO MENI, Maria Gabriela</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>ALBINO, German Rodolfo</td>	
-                <td>UROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ALICO, Eliana</td>
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>ALVAREZ, Analia</td>
-                <td>DIABETOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ANTON, Natalia</td>	
-                <td>NUTRICIÓN</td>
-            </tr>
-            <tr>
-                <td>Aquino, María Belén</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>ARAGON, Adrian Javier Edgardo</td>	
-                <td>CIRUGIA TORÁXICA</td>
-            </tr>
-            <tr>
-                <td>ARBESU, Mario Guillermo</td>	
-                <td>HEMATOLOGÍA, EXTRACCIONES, PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>ARENAS, GABRIELA</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>ARGERICH, María Inés</td>	
-                <td>DIABETOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ARREGHINI, Rita Ana Valeria</td>	
-                <td>INFECTOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ARRIETA, Ivana Sabrina</td>	
-                <td>NUTRICIÓN</td>
-            </tr>
-            <tr>
-                <td>ARRUPE, Matias Fernando</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ATENCIO, Fernando</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>ATENCIO, Jorge Alejandro</td>	
-                <td>NEUROCIRUGÍA</td>
-            </tr>
-            <tr>
-                <td>BAIGORRIA JAYAT, Ariel Oscar</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>BAIGORRIA JAYAT, Ariel Oscar - HOLTER</td>	
-                <td>HOLTER</td>
-            </tr>
-            <tr>
-                <td>BALLADORES, Victor</td>	
-                <td>TRAUMATOLOGÍA COLUMNA</td>
-            </tr>
-            <tr>
-                <td>BARRAZA FLORES, Carolina</td>	
-                <td>NEONATOLOGÍA, PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>BASCO, Gabriela Analia</td>	
-                <td>OBSTERICIA</td>
-            </tr>
-            <tr>
-                <td>BENAVIDEZ, Manuel</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>BERNASCONI, Carlos Alfredo</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>BERNASCONI, Carlos Alfredo ECOCARDIOGRAMA</td>	
-                <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>BERNASCONI, Pablo</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>BERNASCONI, Pablo ECOCARDIOGRAMA</td>	
-                <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>BERRA, MARIA GISELA</td>	
-                <td>GINECOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>BERTANI, Diego Javier</td>	
-                <td>COLOPROCTOLOGIA </td>
-            </tr>
-            <tr>
-                <td>BERTOLOTTI, Favio Roberto</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>BILBAO, Oscar Alberto</td>	
-                <td>COLOPROCTOLOGIA </td>
-            </tr>
-            <tr>
-                <td>BIRMAN, Isaac Alejandro</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>BLOCK, Solange Jesica</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>BOIERO, Bruno Pablo</td>	
-                <td>NEUROCIRUGÍA; COLUMNA-CEREBRO</td>
-            </tr>
-            <tr>
-                <td>BRANZELLO, Emanuel Eduardo</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>BUFALIZA, Jorge</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>CALIGLIORE, María Pía</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>CAMPANELLO, LAURA VALERIA</td>	
-                <td>GINECOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CAMUS, Walter</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>CANTALE, CARINA PAULA</td>	
-                <td>CARDIOLOGÍA (ESPECIAL)</td>
-            </tr>
-            <tr>
-                <td>CANZONIERI, Pablo Jesus</td>	
-                <td>FLEBOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CARDONE, Romina Paula</td>	
-                <td>INFECTOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CARENA, Maria Paula</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>CARLUCCI, Andrea</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>CARMONA, Juan Manuel</td>	
-                <td>CIRUGIA TORÁXICA</td>
-            </tr>
-            <tr>
-                <td>CARRA, Joaquin Andres</td>	
-                <td>TRAUMATOLOGÍA HOMBRO Y RODILLA</td>
-            </tr>
-            <tr>
-                <td>CARRIZO, Maira Jennifer</td>	
-                <td>OBSTERICIA</td>
-            </tr>
-            <tr>
-                <td>CASSATA, Andrea Paola</td>	
-                <td>INFECTOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CASSONE, Eduardo Jose (hijo)</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>CASTELLER, Maria Gabriela</td>	
-                <td>GINECOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CASTILLO, MARCIA LORENA</td>	
-                <td>HEMATOLOGÍA PEDIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>CASTRO, Susana Estela</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>CHAPARRO, German Andres</td>	
-                <td>TRAUMATOLOGÍA TOBILLO Y PIE</td>
-            </tr>
-            <tr>
-                <td>CHAVES, Maria Eva</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>CHIAPETTA, Juan Gustavo</td>	
-                <td>UROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CIOCCA, Leonardo Andres</td>	
-                <td>MASTOLOGIA (PATOLOGIA MAMARIA)</td>
-            </tr>
-            <tr>
-                <td>COLOMA, Jose Maria</td>	
-                <td>NEUROCIRUGÍA</td>
-            </tr>
-            <tr>
-                <td>CONSOLI, Miguel Eduardo</td>	
-                <td>UROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CORREA, Leonardo</td>	
-                <td>GINECOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CORTS, Paola Bibiana</td>	
-                <td>NUTRICIÓN</td>
-            </tr>
-            <tr>
-                <td>CRIVELLI, Jose Luis</td>	
-                <td>ANESTESIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>CUTRONI, Francisco Roberto</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>D´AGOSTINO, María Cecilia</td>	
-                <td>PSICOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>DAFFRA, Pamela Ruth</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>D'AGOSTINO, Maria Cecilia</td>	
-                <td>PSICOLOGÍA PEDÍATRICA</td>
-            </tr>
-            <tr>
-                <td>D'AMELIO, Gabriela</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>DE LA FUENTE ALBARRA, Maria Elisa</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>DENSITOMETRIA</td>	
-                <td>DENSITOMETRIA</td>
-            </tr>
-            <tr>
-                <td>DESPLEGAMIENTO CORTICAL</td>	
-                <td>DESPLEGAMIENTO CORTICAL</td>
-            </tr>
-            <tr>
-                <td>DIAZ, Alberto</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>DIAZ, Ezequiel</td>	
-                <td>TRAUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>DIFUSION-PERFUSION</td>	
-                <td>DIFUSIÓN-PERFUSIÓN</td>
-            </tr>
-            <tr>
-                <td>DOMINGUEZ, Andrés</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>DOMINGUEZ, Dolores</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>DONADI, Andres Alfredo</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>DONNA, Ricardo Federico (hijo)</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>DUBOUE, Luis Fernando</td>	
-                <td>OFTALMOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ECHEGARAY, Maria Sara</td>	
-                <td>GINECOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ECODOPPLER-ECOGRAFIA</td>	
-                <td>ECODOPPLER-ECOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>EEDE, Gabriela Veronica</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>ELECTROCARDIOGRAMA (ECG)</td>	
-                <td>ELECTROCARDIOGRAMA (ECG)</td>
-            </tr>
-            <tr>
-                <td>ERGOMETRIAS</td>	
-                <td>ERGOMETRIAS</td>
-            </tr>
-            <tr>
-                <td>ESCANILLA, Marcela Beatriz</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>ESPECTROSCOPIA</td>	
-                <td>ESPECTROSCOPIA</td>
-            </tr>
-            <tr>
-                <td>ESPINOGRAMA/MEDICION MMII</td>	
-                <td>ESPINOGRAMA/MEDICION MMII</td>
-            </tr>
-            <tr>
-                <td>FARRANDO, Soledad</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>FERNANDEZ LLANOS, Federico</td>	
-                <td>TRAUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>FERNANDEZ, Gaston</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>FIGUEROA, EDUARDO</td>	
-                <td>OTORRINOLARINGOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>FILICE, Paula Andrea</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>FORMAGGIA, Marcos Alberto</td>	
-                <td>CIRUGÍA ESTÉTICA, PLÁSTICA Y REPARA</td>
-            </tr>
-            <tr>
-                <td>FORMAGGIA, Valentina</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>FORTE, Daniel Francisco</td>	
-                <td>FLEBOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>FUEGO, Segundo Mariano</td>	
-                <td>TRAUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>FUNES, Carlos Ramon</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>GALINDO GUIÑAZU, Marcelo Miguel</td>	
-                <td>OFTALMOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GALLARDO, Nestor Adrian</td>	
-                <td>TRAUMATOLOGÍA MANO Y MMSS</td>
-            </tr>
-            <tr>
-                <td>GALLINA, Paula Mariana</td>	
-                <td>OFTALMOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GAMBOA, Juan Manuel</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>GARCIA AMORE, MARIA SABRINA</td>	
-                <td>DERMATOLOGÍA PEDIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>GARCIA CICCARELLI, Agustin</td>	
-                <td>REUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GARCIA ORTEGA, Nicolas Leonardo</td>	
-                <td>FLEBOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GARCIA, Emilio Jose</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>GARCIA, Ezequiel</td>	
-                <td>TRAUMATOLOGÍA COLUMNA</td>
-            </tr>
-            <tr>
-                <td>GENOVESI, Eduardo Marcelo</td>	
-                <td>TRAUMATOLOGÍA HOMBRO Y RODILLA</td>
-            </tr>
-            <tr>
-                <td>GHAZOUL, Mariam Yasmin</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>GIL, Eliana Mariana</td>	
-                <td>NEUMONOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GISBERT RUTTI, Patricia Ines</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>Giunta, Maria Victoria</td>	
-                <td>OSTEOPATÍA</td>
-            </tr>
-            <tr>
-                <td>GOMEZ CENTURIÓN, Santiago Andrés</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>GOMEZ DIEZ, Valentin Uriel</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>GOMEZ TEJADA, Sebastian</td>	
-                <td>TRAUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GOMEZ, Susana</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>GONZALEZ ANNUNZIATA, Diego Ignacio</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>GONZALEZ RUIZ, Maria Isabel</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GONZALEZ VIESCAS, Juan Manuel</td>	
-                <td>TRAUMATOLOGÍA COLUMNA</td>
-            </tr>
-            <tr>
-                <td>GONZALEZ, Nadya Gabriela</td>	
-                <td>OBSTERICIA</td>
-            </tr>
-            <tr>
-                <td>GONZALEZ, Sofia Federica</td>	
-                <td>ENDOCRINOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>GUAYAMA, Santiago Raul</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>GUIROY, Alfredo Jose</td>	
-                <td>TRAUMATOLOGÍA COLUMNA</td>
-            </tr>
-            <tr>
-                <td>GUTIERREZ, Mario Hernan</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>GUZZANTI, Diego</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>HAUILLE, Emilia Fernanda</td>	
-                <td>NEUMONOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>HERRERO, Sandra Silvina Trinidad</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>HOFFMANN, María Paula</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>I.B.C. LABORATORIO, Srl-MICROBIOLOGIA</td>	
-                <td>MICROBIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>JORQUERA, Marcelo Salvador</td>	
-                <td>CIRUGÍA ESTÉTICA, PLÁSTICA Y REPARA</td>
-            </tr>
-            <tr>
-                <td>KABACOFF, Julio Sebastian</td>	
-                <td>NEONATOLOGÍA, PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>KRISTAL, Marcos</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>LABORATORIO C.D.C., S.a.</td>	
-                <td>CORTISOL MATINAL</td>
-            </tr>
-            <tr>
-                <td>LABORATORIO C.D.C., S.a. - BACTERIOLOGIA</td>	
-                <td>PREPARACIONES ESTUDIOS</td>
-            </tr>
-            <tr>
-                <td>LABORATORIO C.D.C., S.a. - HISOPADOS COVID</td>	
-                <td>HISOPADOS COVID</td>
-            </tr>
-            <tr>
-                <td>LABORATORIO C.D.C., S.a.-CURVA DE GLUCOSA</td>	
-                <td>CURVA DE GLUCOSA</td>
-            </tr>
-            <tr>
-                <td>LAMACCHIA, Hector Mario Nuncio</td>	
-                <td>NEFROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>LARA, María Eugenia</td>	
-                <td>REUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>LAURO, Florencia</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>LECETA, Vanina</td>	
-                <td>NUTRICIÓN</td>
-            </tr>
-            <tr>
-                <td>LEMBO, Mario</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>LEMBO, Mario Ariel</td>	
-                <td>DIAGNÓSTICO POR IMAGENES</td>
-            </tr>
-            <tr>
-                <td>LEMOS ZARAGOZA, María Eva</td>	
-                <td>CARDIOLOGÍA INFANTIL</td>
-            </tr>
-            <tr>
-                <td>LEYTES BEJAS, Matias</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>LEYTON, Melisa</td>	
-                <td>NUTRICIÓN</td>
-            </tr>
-            <tr>
-                <td>Lizana, Jeremías</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA - IVE</td>
-            </tr>
-            <tr>
-                <td>LLENSA, Jorge Emilio</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>LLORET, Maria Laura</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>LONGHIN, Cintia Vanina</td>	
-                <td>DIAGNÓSTICO POR IMAGENES</td>
-            </tr>
-            <tr>
-                <td>LOPEZ ALBARRACIN, Maria Laura</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>LOPEZ ALBARRACIN, Maria Laura - HOLTER</td>	
-                <td>HOLTER</td>
-            </tr>
-            <tr>
-                <td>LOPEZ MORAN, VICTORIA</td>	
-                <td>NEUMONOLOGÍA PEDIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>LOPEZ, Oscar Alejandro</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>LUNATI, Maria Cristina</td>	
-                <td>DIABETOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>LUQUE, Osvaldo Martin</td>	
-                <td>TRAUMATOLOGÍA RODILLA TOBILLO</td>
-            </tr>
-            <tr>
-                <td>MAGISTOCCHI, Franco</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>MALLEA, Sandra</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>MAMOGRAFIA</td>	
-                <td>MAMOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>MAMPEL, Alejandra</td>	
-                <td>GENÉTICA; PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>MANGANIELLO, Karina</td>	
-                <td>NEUMONOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>MANSON, Barbara</td>	
-                <td>NEUMONOLOGÍA PEDIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>MANZUR, Isabel Alejandra</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>MARCANTONI, Aldo</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>MARCELLINO, Guillermo</td>	
-                <td>OFTALMOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>MARTIN, Gabriela Alejandra</td>	
-                <td>FONOAUDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>MARTIN, Noelia Grisel</td>	
-                <td>GINECOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>MARTINA ARRIGO, Ailin Janet</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>MARTINEZ ALEMANY, Carlos Gustavo</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>MARTINEZ COCCOLA, Hugo Federico</td>	
-                <td>OTORRINOLARINGOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>MARTINEZ HERRERO, Mariela</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>MARTINEZ, Francisco</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>MASSACESI, Oscar Damian</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>MASTRONARDI LOMBARDI, Valentina</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>MATUS, Daniel Alejandro</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>MEDICINA FETAL/SCREENING</td>	
-                <td>ECOGRAFÍA OBSTÉTRICA</td>
-            </tr>
-            <tr>
-                <td>MERCADO, Jose Osvaldo</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>MINATTI, Walter Ramon</td>	
-                <td>COLOPROCTOLOGIA </td>
-            </tr>
-            <tr>
-                <td>MOLLAR, Silvia Marcela</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>MONDINI, Mauricio Javier</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>MONTENERO, Maria Eliana</td>	
-                <td>OBSTERICIA</td>
-            </tr>
-            <tr>
-                <td>MORALES, Sergio Agustin</td>	
-                <td>NEONATOLOGÍA, PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>MUGIANESI ARAUJO, Emiliano</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>NEFA, Jorge</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>NIELLA, Marcela Beatriz</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>NIELLA, Marcela Beatriz - PRESUROMETRIA</td>	
-                <td>PRESUROMETRÍA</td>
-            </tr>
-            <tr>
-                <td>NIELLA, Marcela Beatriz ECOCARDIOGRAMA</td>	
-                <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>NIELLA, Natalia Lorena</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>NIELLA, Natalia Lorena - PRESUROMETRIA</td>	
-                <td>PRESUROMETRÍA</td>
-            </tr>
-            <tr>
-                <td>NIELLA, Natalia Lorena ECOCARDIOGRAMA</td>	
-                <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>No directas de clínica-Imágenes</td>	
-                <td>No directas de clínica-Imágenes</td>
-            </tr>
-            <tr>
-                <td>NOTTI GNAZZO, Alberto Ruben</td>	
-                <td>CIRUGIA DE CABEZA Y CUELLO  (NO RECIBE DASUTEN)</td>
-            </tr>
-            <tr>
-                <td>NUÑEZ, Mariano Andres</td>	
-                <td>UROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>OFTALMOLOGIA ESTUDIOS</td>	
-                <td>OFTALMOLOGÍA ESTUDIOS</td>
-            </tr>
-            <tr>
-                <td>OJEDA, Alejandra</td>	
-                <td>ENDOCRINOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>OLCESE, Ernesto Gabriel</td>	
-                <td>MASTOLOGIA (PATOLOGIA MAMARIA)</td>
-            </tr>
-            <tr>
-                <td>OLGUIN, Fernando Andres</td>	
-                <td>NEUROCIRUGÍA; COLUMNA</td>
-            </tr>
-            <tr>
-                <td>OMELANCZUK, Pablo Esteban</td>	
-                <td>CIRUGÍA BARIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>OSTEOPOROSIS</td>	
-                <td>OSTEOPOROSIS</td>
-            </tr>
-            <tr>
-                <td>PACE, Analia Fernanda</td>	
-                <td>NEUROCIRUGÍA</td>
-            </tr>
-            <tr>
-                <td>PAEZ, Mauro David</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>PALOMBA, Cristian Oscar</td>	
-                <td>OBSTETRICIA, ECOGRAFIA GEN</td>
-            </tr>
-            <tr>
-                <td>PARRA, Luis Alejandro</td>	
-                <td>NEUMONOLOGÍA INFANTIL</td>
-            </tr>
-            <tr>
-                <td>PELAYES, Pablo</td>	
-                <td>DOLOR Y CUIDADOS PALIATIVOS</td>
-            </tr>
-            <tr>
-                <td>PENA, Ariel Eduardo</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>PEÑAFORT, Fernando Andres</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>PERALTA, Gonzalo</td>	
-                <td>NEUMONOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>PETRA, Eliana Belen</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>PETRICCA, Juan Pablo</td>	
-                <td>INFECTOLOGÍA PEDIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>PILOT, Mauricio German</td>	
-                <td>UROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>PITHOD, Daniel Eduardo</td>	
-                <td>NEUROCIRUGÍA; COLUMNA-CEREBRO</td>
-            </tr>
-            <tr>
-                <td>PITRELLA, Alicia</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>PLATI, Silvina Alejandra</td>	
-                <td>NEUROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>POLITO, Roque Alberto</td>	
-                <td>TRAUMATOLOGÍA RODI TOBIL Y PIE</td>
-            </tr>
-            <tr>
-                <td>POLLA, Gabriela</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>PONCE, Adriana Roxana</td>	
-                <td>FONOAUDIOLOGÍA PEDIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>PONT LEZICA, Diego</td>	
-                <td>TRAUMATOLOGÍA MANO</td>
-            </tr>
-            <tr>
-                <td>PUERTAS, Eduardo Juan</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>PUERTAS, Eduardo Juan ECOCARDIOGRAMA</td>	
-                <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>QUARTARA, Maria Eugenia</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>QUIROGA MARTINEZ, Maria Rosario</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>QUISTAPACE SALAS, Maria Soledad</td>	
-                <td>NEUROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>RAGAZZONE, Marìa Fernanda</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>RAINA, Maria Belen</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>REINOSO, Erika Mabel</td>	
-                <td>OBSTERICIA</td>
-            </tr>
-            <tr>
-                <td>RESONANCIAS</td>	
-                <td>RESONANCIAS</td>
-            </tr>
-            <tr>
-                <td>RIMOLO, Maria Belen</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>RIVAROLA, Guillermo</td>	
-                <td>TRAUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>RIVAS, Daniela</td>	
-                <td>TRATAMIENTO DEL DOLOR Y CUIDADOS PALIATIVOS</td>
-            </tr>
-            <tr>
-                <td>RMN MULTIPARAMETRICA PROSTATA</td>	
-                <td>RMN MULTIPARAMETRICA PROSTATA</td>
-            </tr>
-            <tr>
-                <td>ROCHET, Sofia Beatriz</td>	
-                <td>FLEBOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>RODRIGUEZ FUENTES, Walter Pablo</td>	
-                <td>TRAUMATOLOGÍA DE RODILLA</td>
-            </tr>
-            <tr>
-                <td>RODRIGUEZ LAPENNA, YACO DENIS </td>	
-                <td>TRAUMATOLOGÍA COLUMNA</td>
-            </tr>
-            <tr>
-                <td>RODRIGUEZ ROLFI, LUCIANA</td>	
-                <td>NEUROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>Rodriguez, Nicolas</td>	
-                <td>QUIROPRAXIA</td>
-            </tr>
-            <tr>
-                <td>ROJAS, Matias</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>ROMANELLO, Carla Agustina</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ROMERA, Mario Adrian</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>ROMERO, Natalia Soledad</td>	
-                <td>HEMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ROSSI, Javier Antonio</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>ROVER, Gustavo Daniel</td>	
-                <td>NEONATOLOGÍA, PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>ROYO, Pedro Francisco</td>	
-                <td>TRAUMATOLOGÍA INFANTIL</td>
-            </tr>
-            <tr>
-                <td>RUBIES, Gonzalo Fernando</td>	
-                <td>TRAUMATOLOGÍA RODILLA Y CADERA</td>
-            </tr>
-            <tr>
-                <td>RUBIRA, Magali</td>	
-                <td>INSUFICIENCIA CARDÍACA</td>
-            </tr>
-            <tr>
-                <td>RX RADIOGRAFIAS ODONTOLOGICAS</td>	
-                <td>RX RADIOGRAFIAS ODONTOLOGICAS</td>
-            </tr>
-            <tr>
-                <td>RX Seriadas y Videodeglución(Radiog)</td>	
-                <td>RX Seriadas y Videodeglución(Radiog)</td>
-            </tr>
-            <tr>
-                <td>SACCHI, Carlos Gustavo</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>SAEZ, Guillermo Javier</td>	
-                <td>CIRUGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>SAGAS MOLE, Agustin Nahuel</td>	
-                <td>TRAUMATOLOGIA BRAZO,HOMBRO, MS</td>
-            </tr>
-            <tr>
-                <td>SANCHEZ, Angela Maria Magali</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>SANCHEZ, Claudio Andrés</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>SANCHEZ, Federico Jose</td>	
-                <td>NEUROCIRUGÍA</td>
-            </tr>
-            <tr>
-                <td>SANCHEZ, Francisco</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>SANCHEZ, Sebastian Jose</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>SANTAMARINA, Rodrigo Daniel - NEUROLOGIA ESTUDIOS</td>	
-                <td>NEUROLOGÍA, neurologia ESTUDIOS</td>
-            </tr>
-            <tr>
-                <td>SARACCO, Alejandro Javier</td>	
-                <td>CARDIOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>SARDELLA, Maria Laura</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>SARDI, Ricardo Javier</td>	
-                <td>NEFROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>SARRADELL, Sergio Daniel</td>	
-                <td>OTORRINOLARINGOLOGÍA PEDIATRICA</td>
-            </tr>
-            <tr>
-                <td>SAUCEDO, Veronica Rocio</td>	
-                <td>ECOGRAFÍA GENERAL, MAMOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>SAVINA PEZUTTI, Mariela Soledad</td>	
-                <td>ENDOCRINOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>SCAGLIOTTI, Luis</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>SCARLATTI, Fernanda</td>	
-                <td>PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>SCHERL, Humberto David</td>	
-                <td>CIRUGÍA PEDIÁTRICA</td>
-            </tr>
-            <tr>
-                <td>SEMINARA, Martin</td>	
-                <td>OFTALMOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>SEMINO, Silvana</td>	
-                <td>ANATOMÍA PATOLÓGICA</td>
-            </tr>
-            <tr>
-                <td>SINZIG, German Eduardo</td>	
-                <td>NEONATOLOGÍA, PEDIATRÍA</td>
-            </tr>
-            <tr>
-                <td>SOLAVALLONE, Vanina Alejandra</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>SOSA, Barbara Daniela</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>SOTTANO LARZABAL, Maria Eugenia</td>	
-                <td>NEUROLOGÍA; EPILEPSIA</td>
-            </tr>
-            <tr>
-                <td>SPITZ, Bernardo Noe ECOCARDIOGRAMA</td>	
-                <td>CARDIOLOGÍA; ECOCARDIOGRAFÍA</td>
-            </tr>
-            <tr>
-                <td>SUSO, Leticia Noemi</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>TERRAZA, Laura Lourdes</td>	
-                <td>GINECOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>TOMAS. Silvio</td>	
-                <td>OTORRINOLARINGOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>TOMOGRAFIA (TC)</td>	
-                <td>TOMOGRAFIA (TC)</td>
-            </tr>
-            <tr>
-                <td>TOMOGRAFIA (TC) BOEDO</td>	
-                <td>TOMOGRAFIA (TC) BOEDO</td>
-            </tr>
-            <tr>
-                <td>TORRES, Carlos</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>TORRES, Gustavo Alberto</td>	
-                <td>NEUMONOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VALDEMOROS, Maria Florencia</td>	
-                <td>INMUNOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VALENTINI, Pablo Nicolas</td>	
-                <td>UROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VANELLA, Maria Jose</td>	
-                <td>ECOGRAFÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>VEGA, Matias Ernesto</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VELA, Manuela</td>	
-                <td>GINECOLOGÍA Y OBSTETRÍCIA</td>
-            </tr>
-            <tr>
-                <td>VENDRELL, Lucas Martin</td>	
-                <td>UROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VERA CASTILLA, Carolina</td>	
-                <td>CLINICA MÉDICA</td>
-            </tr>
-            <tr>
-                <td>VEREDA, Francisco</td>	
-                <td>TRAUMATOLOGÍA GENERAL</td>
-            </tr>
-            <tr>
-                <td>VICTORIA, Romina</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VILDOZA, Ricardo</td>	
-                <td>TRAUMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VIOLINI, Valeria</td>	
-                <td>DERMATOLOGÍA</td>
-            </tr>
-            <tr>
-                <td>VOLUMETRIA HEPATICA</td>	
-                <td>VOLUMETRIA HEPÁTICA</td>
-            </tr>
-            <tr>
-                <td>YANZON, Carlos Sebastian</td>	
-                <td>TRAUMATOLOGÍA RODILLA Y CADERA</td>
-            </tr>
-            <tr>
-                <td>YAÑEZ, Federico</td>	
-                <td>GASTROENTEROLOGÍA</td>
-            </tr>
-            <tr>
-                <td>ZABALUA, Silvina Maria</td>	
-                <td>DIABETOLOGÍA</td>
-            </tr>
-        </table>
-    </div>
+    </main>
     
 
     <script src="script.js"></script>
