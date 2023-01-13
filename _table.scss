@@ -1,0 +1,63 @@
+.input {
+    display: flex;
+    padding-top: 80px;
+    max-width: 700px;
+}
+  #myInput,
+  #myInput2 {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-right: 10px;
+    border-radius: 0.7rem;
+    background-color: #f5f1e5;
+
+    &:hover {
+      border: 1px solid #fdb454;
+    }
+    &:focus {
+      outline: none !important; 
+      border: 1px solid #fdb454;
+      background-color: #ffffff;
+    }
+  }
+  
+
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgba(233, 232, 232, 0.918);
+    font-size: 15px;
+  tr.header {
+    background-color: #ffd181;
+
+    &:hover {
+      background-color: #ffd181;
+    }
+  }
+  tr{
+    border-bottom: 1px solid #ddd;
+    &:hover{
+      background-color: #ffd1812a;
+    }
+  }
+  td, th {
+    padding: 12px;
+    a {
+        text-decoration: none;
+        color: #106e5a;
+        font-weight: bold;
+    }
+  }
+}
+
+.tableContainer {
+    padding: 0 0 0 20px;
+    max-width: 80%;
+    margin: 0px;
+    min-width: 70%;
+}

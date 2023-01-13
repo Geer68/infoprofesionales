@@ -1,8 +1,4 @@
-* {
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 button {
   border: 0;
   padding: 0;
@@ -30,8 +26,10 @@ button {
   display: flex;
   align-items: stretch;
   height: 72px;
-  background: #7c941c;
-  color: #f9f9f9;
+  background: #fdb454;
+  color: #252525;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .burger {
@@ -129,6 +127,11 @@ body.open .burger {
 .dropdown-menu {
   display: grid;
   margin-bottom: 28px;
+  text-decoration: none;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  color: #252525;
 }
 
 @media (width >= 500px) {
@@ -144,11 +147,12 @@ body.open .burger {
     padding: 6px 24px 10px;
     margin-bottom: 0;
     place-items: start;
-    background: #6c8119;
+    background: #ffd181;
     opacity: 0;
     visibility: hidden;
     translate: 0 24px;
     transition: 0.3s;
+    color: #252525;
   }
   .dropdown:hover .dropdown-menu {
     opacity: 1;
@@ -157,7 +161,7 @@ body.open .burger {
   }
 }
 .dropdown-menu > button {
-  color: #f9f9f9;
+  color: #252525;
   opacity: 1;
   height: 40px;
 }
@@ -172,41 +176,6 @@ body.open .burger {
 }
 .dropdown-menu > button:hover {
   opacity: 1;
-}
-
-/* hover dropdown menus */
-@media only screen and (max-width: 991px) {
-  .navbar-hover .show > .dropdown-toggle::after {
-    transform: rotate(-90deg);
-  }
-}
-@media only screen and (min-width: 992px) {
-  .navbar-hover .collapse ul li {
-    position: relative;
-  }
-  .navbar-hover .collapse ul li:hover > ul {
-    display: block;
-  }
-  .navbar-hover .collapse ul ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 250px;
-    display: none;
-  }
-  .navbar-hover .collapse ul ul ul {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    min-width: 250px;
-    display: none;
-  }
-  /*.navbar-hover .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}*/
-}
-main .medicos {
-  background-color: #D9D9D9;
-  display: flex;
-  flex-direction: row;
 }
 
 .input {
@@ -226,57 +195,197 @@ main .medicos {
   margin-bottom: 12px;
   margin-right: 10px;
   border-radius: 0.7rem;
-  background-color: #f5f4e5;
+  background-color: #f5f1e5;
 }
 #myInput:hover,
 #myInput2:hover {
-  border: 1px solid #7c941c;
+  border: 1px solid #fdb454;
 }
 #myInput:focus,
 #myInput2:focus {
   outline: none !important;
-  border: 1px solid #7c941c;
+  border: 1px solid #fdb454;
   background-color: #ffffff;
 }
 
 #myTable {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid rgb(204, 204, 204);
+  border: 1px solid rgba(233, 232, 232, 0.918);
   font-size: 15px;
 }
 #myTable tr.header {
-  background-color: #7c941c;
+  background-color: #ffd181;
 }
 #myTable tr.header:hover {
-  background-color: #7c941c;
+  background-color: #ffd181;
 }
 #myTable tr {
   border-bottom: 1px solid #ddd;
 }
 #myTable tr:hover {
-  background-color: #f1f1f1;
+  background-color: rgba(255, 209, 129, 0.1647058824);
 }
 #myTable td, #myTable th {
-  text-align: left;
   padding: 12px;
+}
+#myTable td a, #myTable th a {
+  text-decoration: none;
+  color: #106e5a;
+  font-weight: bold;
 }
 
 .tableContainer {
   padding: 0 0 0 20px;
   max-width: 80%;
+  margin: 0px;
+  min-width: 70%;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-height: 300px;
+}
+.footerContent h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+  margin: 10px 0 0 0;
+}
+.footerContent p {
+  max-width: 500px;
+  line-height: 30px;
+  font-size: 15px;
+  color: #cacdd2;
+  margin: 10px 0 0 0;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 1.5px;
+  margin: 10px 0 0 0;
+}
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+body {
+  background-color: rgba(156, 91, 17, 0.05);
+}
+
+.social-container {
+  display: flex;
+  justify-items: center;
+  width: auto;
+  text-align: center;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+.social-icons {
+  padding: 0px;
+  list-style: none;
+  margin: 15px;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  font-size: x-large;
+  color: #fff;
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #9c5b11, #5c3108);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #9c5b11;
+  background: -webkit-linear-gradient(45deg, #9c5b11, #5c3108);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.medicos {
+  display: flex;
+  flex-direction: row;
 }
 
 .novedades {
-  padding: 80px 0 30px 0;
+  padding: 140px 0 30px 15px;
   display: flex;
   flex-direction: column;
+  min-width: 250px;
+  max-width: 400px;
 }
 .novedades article {
   align-items: center;
-  background-color: rgb(245, 66, 66);
+  background-color: #650404;
   border-radius: 0.8rem;
   text-align: center;
+  margin-top: 15px;
 }
 .novedades article h2 {
   font-size: x-large;
@@ -284,6 +393,27 @@ main .medicos {
 }
 .novedades article p {
   color: white;
+}
+
+.informacion {
+  padding: 80px;
+}
+.informacion article {
+  background-color: #ffd181;
+  border-radius: 0.8rem;
+  text-align: center;
+  margin-top: 15px;
+}
+.informacion article h2 {
+  font-size: x-large;
+  color: white;
+}
+.informacion article p {
+  color: white;
+  text-align: left;
+}
+.informacion article li {
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
