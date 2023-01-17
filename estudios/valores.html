@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+
+<body>
+    <nav class="navbar">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <button class="button">Home</button>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <button class="button">
+                    <a href="index.html">Médicos</a>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="button"><a href="ventanillas.html">Ventanillas</a>
+
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="button">
+                    Estudios
+                    <img src="/chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                    <button>Valores</button>
+                    <button><a href="estudios/covid.html">Hisopados Covid</a></button>
+                    <button>Preparaciones</button>
+                    <button>Turnos</button>
+                    <button>Ecografias</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="medicos">
+        <div class="tableContainer">
+            <div class="input">
+                <input type="text" id="myInput" onkeyup="search2()" placeholder="Busca por código"
+                    title="Type in a name">
+                <input type="text" id="myInput2" onkeyup="search2()" placeholder="Busca por servicio"
+                    title="Type in a name">
+            </div>
+            <table id="myTableV">
+                <tr class="header">
+                    <th style="width:10%;">Código</th>
+                    <th style="width:80%;">Determinación</th>
+                    <th style="width:10%;">Valor</th>
+                </tr>
+                <tr>
+                    <td>10713</td>
+                    <td>MODULO DE INYECCION DE TOXINA BOTULINICA</td>
+                    <td>35300</td>
+                </tr>
+                <tr>
+                    <td>20104</td>
+                    <td>INTRODUCCION DE SUSTANCIAS TERAPEUTICAS RETROBULARES INYECTABLES </td>
+                    <td>10900</td>
+                </tr>
+                <tr>
+                    <td>20307</td>
+                    <td>INYECCION SUBJUNTIVA O SUBTENONIANA </td>
+                    <td>19900</td>
+                </tr>
+                <tr>
+                    <td>70620</td>
+                    <td>TRATAMIENTO ESCLEROSANTE DE VARICES PERIFERICAS </td>
+                    <td>6200</td>
+                </tr>
+                <tr>
+                    <td>110221</td>
+                    <td>COLOCACION/EXTRACCION ANTICONCEPTIVO EN AMBULATORIO </td>
+                    <td>28400</td>
+                </tr>
+                <tr>
+                    <td>110222</td>
+                    <td>MODULO INTERRUPCION VOLUNTARIA EMBARAZO AMBULATORIO </td>
+                    <td>38600</td>
+                </tr>
+                <tr>
+                    <td>150106</td>
+                    <td>CITOLOGIA EXFOLIATIVA ONCOLOGICA </td>
+                    <td>2800</td>
+                </tr>
+                <tr>
+                    <td>170101</td>
+                    <td>ELECTROCARDIOGRAMA EN CONSULTORIO (CON O SIN PRUEBA DE ESFUERZO) </td>
+                    <td>2800</td>
+                </tr>
+                <tr>
+                    <td>170111</td>
+                    <td>ERGOMETRIA </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>170118</td>
+                    <td>ELECTROCARDIOGRAMA DE HOLTER POR 24 HORAS DOS CANALES </td>
+                    <td>13000</td>
+                </tr>
+                <tr>
+                    <td>170119</td>
+                    <td>PRESUROMETRIA HOLTER DE PRESION </td>
+                    <td>13000</td>
+                </tr>
+                <tr>
+                    <td>180103</td>
+                    <td>ECOCARDIOGRAMA BIDIMENSIONAL </td>
+                    <td>6200</td>
+                </tr>
+                <tr>
+                    <td>180104</td>
+                    <td>ECOGRAFIA TOCOGINECOLOGICA </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180106</td>
+                    <td>ECOGRAFIA MAMARIA UNI Y BILATERAL </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180107</td>
+                    <td>ECOGRAFIA CEREBRAL (CON MODO B Y A) </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180110</td>
+                    <td>ECOGRAFIA TIROIDEA </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180111</td>
+                    <td>ECOGRAFIA DE TESTICULOS </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180112</td>
+                    <td>ECOGRAFIA COMPLETA DE ABDOMEN </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180113</td>
+                    <td>ECOGRAFIA HEPATICA BILIAR ESPLENICA O TORACICA </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180114</td>
+                    <td>ECOGRAFIA DE VEJIGA O PROSTATA </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180116</td>
+                    <td>ECOGRAFIA RENAL BILATERAL </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180117</td>
+                    <td>ECOGRAFIA DE AORTA ABDOMINAL DINAMICA Y ESTATICA (MODO M) </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180118</td>
+                    <td>ECOGRAFIA PANCREATICA O SUPRARRENAL </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180121</td>
+                    <td>ECOGRAFIA PARA LA AMNIOCENTESIS </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180122</td>
+                    <td>ECOCARDIOGRAMA STRESS </td>
+                    <td>26900</td>
+                </tr>
+                <tr>
+                    <td>180124</td>
+                    <td>ECOGRAFIA PAROTIDA SUBMAXILAR </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180125</td>
+                    <td>ECOGRAFIA PARTES BLANDAS </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180126</td>
+                    <td>ECOGRAFIA DE CADERA (BILAT) </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180127</td>
+                    <td>ECOGRAFIA TRANSVAGINAL </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180128</td>
+                    <td>ECOGRAFIA TRANSRECTAL - PROSTATA </td>
+                    <td>6900</td>
+                </tr>
+                <tr>
+                    <td>180130</td>
+                    <td>PUNCION BIOPSIA BAJO ECOGRAFIA S/A </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>180132</td>
+                    <td>CORE BIOPSY O PUNCION HISTOLOGICA POR ECOGRAFIA UNILATERAL </td>
+                    <td>23500</td>
+                </tr>
+                <tr>
+                    <td>180133</td>
+                    <td>LOCALIZACION PREQUIRURGICA O MARCACION RADIO QUIRURGICA POR ECOGRAFIA UNILATERAL</td>
+                    <td>18200</td>
+                </tr>
+                <tr>
+                    <td>180134</td>
+                    <td>PUNCION CITOLOGICA NODULO UNICO </td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>180135</td>
+                    <td>PUNCION CITOLOGICA NODULOS MULTIPLES UNILATERAL </td>
+                    <td>15500</td>
+                </tr>
+                <tr>
+                    <td>180201</td>
+                    <td>ECODOPPLER VASOS DEL CUELLO </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180202</td>
+                    <td>ECODOPPLER DE CAROTIDAS </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180203</td>
+                    <td>ECODOPPLER TIROIDEO </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180204</td>
+                    <td>ECODOPPLER CARDIACO </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180205</td>
+                    <td>ECODOPPLER CARDIACO FETAL </td>
+                    <td>24800</td>
+                </tr>
+                <tr>
+                    <td>180206</td>
+                    <td>ECODOPPLER ABDOMINAL </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180207</td>
+                    <td>ECODOPPLER PERIFERICO-RENAL-AO </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180208</td>
+                    <td>ECODOPPLER ARTERIAL MMSS UNILATERAL </td>
+                    <td>10500</td>
+                </tr>
+                <tr>
+                    <td>180209</td>
+                    <td>ECODOPPLER VENOSO MMSS UNILATERAL </td>
+                    <td>10500</td>
+                </tr>
+                <tr>
+                    <td>180210</td>
+                    <td>ECODOPPLER ARTERIAL MMSS BILATERAL </td>
+                    <td>18200</td>
+                </tr>
+                <tr>
+                    <td>180211</td>
+                    <td>ECODOPPLER VENOSO MMSS BILATERAL </td>
+                    <td>18200</td>
+                </tr>
+                <tr>
+                    <td>180212</td>
+                    <td>ECODOPPLER ARTERIAL MMII UNILATERAL </td>
+                    <td>10500</td>
+                </tr>
+                <tr>
+                    <td>180213</td>
+                    <td>ECODOPPLER VENOSO MMII UNILATERAL </td>
+                    <td>10500</td>
+                </tr>
+                <tr>
+                    <td>180214</td>
+                    <td>ECODOPPLER ARTERIAL MMII BILATERAL </td>
+                    <td>18200</td>
+                </tr>
+                <tr>
+                    <td>180215</td>
+                    <td>ECODOPPLER VENOSO MMII BILATERAL </td>
+                    <td>18200</td>
+                </tr>
+                <tr>
+                    <td>180216</td>
+                    <td>ECODOPPLER TESTICULAR </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180217</td>
+                    <td>ECODOPPLER FETAL OBSTETRICO </td>
+                    <td>12800</td>
+                </tr>
+                <tr>
+                    <td>180218</td>
+                    <td>ECODOPPLER OTRAS REGIONES </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>180219</td>
+                    <td>ECODOPPLER TRANSESOFAGICO </td>
+                    <td>37900</td>
+                </tr>
+                <tr>
+                    <td>190101</td>
+                    <td>CONSULTA NUTRICIONISTA </td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>190103</td>
+                    <td>CONSULTA NUTRICION SEGUIMIENTO </td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>190104</td>
+                    <td>IMPEDANCIOMETRIA BIO ELECTRICA SEGMENTARIA </td>
+                    <td>2900</td>
+                </tr>
+                <tr>
+                    <td>200201</td>
+                    <td>VIDEO ESOFAGOGASTRODUODENOSCOPIA </td>
+                    <td>30900</td>
+                </tr>
+                <tr>
+                    <td>200202</td>
+                    <td>VIDEO ESOFAGOGASTRODUODENOSCOPIA CON POLIPECTOMIA BAJO ANESTESIA </td>
+                    <td>65000</td>
+                </tr>
+                <tr>
+                    <td>200203</td>
+                    <td>VIDEOCOLONOSCOPIA </td>
+                    <td>38500</td>
+                </tr>
+                <tr>
+                    <td>200204</td>
+                    <td>VIDEOCOLONOSCOPIA CON POLIPECTOMIA </td>
+                    <td>68800</td>
+                </tr>
+                <tr>
+                    <td>200206</td>
+                    <td>COLANGIOPANCREATOGRAFIA RETROGRADA ENDOSCOPICA </td>
+                    <td>126900</td>
+                </tr>
+                <tr>
+                    <td>200208</td>
+                    <td>COLOCACION DE STENT COLONICOS ESOFAGICOS O BILIARES </td>
+                    <td>68800</td>
+                </tr>
+                <tr>
+                    <td>200209</td>
+                    <td>COLOCACION DE BANDAS ESOFAGICAS O COLONICAS </td>
+                    <td>68800</td>
+                </tr>
+                <tr>
+                    <td>200210</td>
+                    <td>ESCLEROSIS DE VARICES ESOFAGICAS POR SESION </td>
+                    <td>68800</td>
+                </tr>
+                <tr>
+                    <td>200211</td>
+                    <td>EXTRACCION DE CUERPO EXTRAÑO </td>
+                    <td>68800</td>
+                </tr>
+                <tr>
+                    <td>200212</td>
+                    <td>GASTROSTOMIA ENDOSCOPICA PERCUTANEA </td>
+                    <td>68800</td>
+                </tr>
+                <tr>
+                    <td>200213</td>
+                    <td>DILATACION ENDOSCOPICA ESTENOSIS ESOFAGICA </td>
+                    <td>68800</td>
+                </tr>
+                <tr>
+                    <td>200215</td>
+                    <td>MUCOSECTOMIA </td>
+                    <td>81900</td>
+                </tr>
+                <tr>
+                    <td>200216</td>
+                    <td>ECOENDOSCOPIA DIAGNOSTICA </td>
+                    <td>114800</td>
+                </tr>
+                <tr>
+                    <td>200217</td>
+                    <td>ECOENDOSCOPIA TERAPEUTICA PUNCION ASPIRACION CON AGUJA FINA </td>
+                    <td>125500</td>
+                </tr>
+                <tr>
+                    <td>200218</td>
+                    <td>VIDEOCAPSULA ENDOSCOPICA </td>
+                    <td>112900</td>
+                </tr>
+                <tr>
+                    <td>200219</td>
+                    <td>TRATAMIENTO ENDOSCOPICO CON ARGON PLASMA </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>200301</td>
+                    <td>TEST INTOLERANCIA A LA LACTOSA </td>
+                    <td>12700</td>
+                </tr>
+                <tr>
+                    <td>200302</td>
+                    <td>TEST DE SOBRE CRECIMIENTO BACTERIANO </td>
+                    <td>12700</td>
+                </tr>
+                <tr>
+                    <td>210108</td>
+                    <td>ADN FETAL EN SANGRE MATERNA PANEL SIMPLE </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>220101</td>
+                    <td>COLPOSCOPIA-TRAQUELOSCOPIA </td>
+                    <td>2800</td>
+                </tr>
+                <tr>
+                    <td>220108</td>
+                    <td>CEPILLADO DE EPITELIO VAGINAL Y CERVICAL PARA DETECCION HPV CA IN-SITU </td>
+                    <td>9800</td>
+                </tr>
+                <tr>
+                    <td>220202</td>
+                    <td>MONITOREO FETAL </td>
+                    <td>3800</td>
+                </tr>
+                <tr>
+                    <td>231010</td>
+                    <td>HEMATOLOGIA CONSULTA Y ESTUDIOS </td>
+                    <td>5300</td>
+                </tr>
+                <tr>
+                    <td>240111</td>
+                    <td>SANGRIA POR RECOLECCION CON EQUIPO AL VACIO </td>
+                    <td>6800</td>
+                </tr>
+                <tr>
+                    <td>250107</td>
+                    <td>ESTIMULACION DEL RECIEN NACIDO KINESIOLOGICO </td>
+                    <td>2800</td>
+                </tr>
+                <tr>
+                    <td>280112</td>
+                    <td>POLIGRAFIA RESPIRATORIA </td>
+                    <td>23700</td>
+                </tr>
+                <tr>
+                    <td>290101</td>
+                    <td>ELECTROENCEFALOGRAFIA CON ACTIVACION SIMPLE </td>
+                    <td>3800</td>
+                </tr>
+                <tr>
+                    <td>290102</td>
+                    <td>ELECTROENCEFALOGRAFIA CON ACTIVACION COMPLEJA </td>
+                    <td>3800</td>
+                </tr>
+                <tr>
+                    <td>290104</td>
+                    <td>ELECTROMIOGRAFIA DE MIEMBROS SUPERIORES O INFERIORES O FACIAL </td>
+                    <td>6800</td>
+                </tr>
+                <tr>
+                    <td>290105</td>
+                    <td>ELECTROMIOGRAFIA DE LOS CUATRO MIEMBROS </td>
+                    <td>8800</td>
+                </tr>
+                <tr>
+                    <td>290106</td>
+                    <td>ELECTROMIOGRAFIA CON VELOCIDAD DE CONDUCCION </td>
+                    <td>7900</td>
+                </tr>
+                <tr>
+                    <td>290111</td>
+                    <td>MAPEO CEREBRAL </td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>290112</td>
+                    <td>ELECTROENCEFALOGRAMA PROLONGADO </td>
+                    <td>6800</td>
+                </tr>
+                <tr>
+                    <td>290113</td>
+                    <td>Latencias sensitivas distales 2 miembros </td>
+                    <td>10700</td>
+                </tr>
+                <tr>
+                    <td>290114</td>
+                    <td>Latencias sensitivas distales 4 miembros </td>
+                    <td>10700</td>
+                </tr>
+                <tr>
+                    <td>290119</td>
+                    <td>Potenciales evocados somatosensitivos 2 miembros </td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>290120</td>
+                    <td>Potenciales evocados somatosensitivos 4 membros </td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>290121</td>
+                    <td>Potenciales evocados auditivos </td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>290124</td>
+                    <td>Potenciales evocados visuales </td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>300104</td>
+                    <td>FONDO DE OJO Y/O ESQUIASCOPIA </td>
+                    <td>4200</td>
+                </tr>
+                <tr>
+                    <td>300107</td>
+                    <td>EJERCICIOS ORTOPTICOS POR SESION -BILATERAL- </td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>300108</td>
+                    <td>GONIOSCOPIA -BILATERAL- </td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>300109</td>
+                    <td>CURVA TENSIONAL -BILATERAL- </td>
+                    <td>7100</td>
+                </tr>
+                <tr>
+                    <td>300111</td>
+                    <td>RETINOGRAFIA CON TRES PLACAS -UNILATERAL- </td>
+                    <td>13900</td>
+                </tr>
+                <tr>
+                    <td>300112</td>
+                    <td>RETINOGRAFIA CON TRES PLACAS -BILATERAL- </td>
+                    <td>24200</td>
+                </tr>
+                <tr>
+                    <td>300120</td>
+                    <td>ESTUDIO DE FIJACION EN EL ESTRABISMO (CON VISUSCOPIO) -BILATERAL- </td>
+                    <td>3600</td>
+                </tr>
+                <tr>
+                    <td>300125</td>
+                    <td>TEST DE AMSLER </td>
+                    <td>1800</td>
+                </tr>
+                <tr>
+                    <td>300126</td>
+                    <td>TEST DE LANCASTER </td>
+                    <td>1900</td>
+                </tr>
+                <tr>
+                    <td>300130</td>
+                    <td>ESTUDIO DE LA VISION DEL COLOR </td>
+                    <td>2300</td>
+                </tr>
+                <tr>
+                    <td>300203</td>
+                    <td>TEST DE FUNCION PAM Y TEST DE LOTMAR </td>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <td>300204</td>
+                    <td>TOPOGRAFIA CORNEAL </td>
+                    <td>11700</td>
+                </tr>
+                <tr>
+                    <td>300206</td>
+                    <td>CAMPO VISUAL COMPUTARIZADO </td>
+                    <td>11700</td>
+                </tr>
+                <tr>
+                    <td>300207</td>
+                    <td>REGISTROS GRAFICOS DEL ESTRABISMO </td>
+                    <td>9900</td>
+                </tr>
+                <tr>
+                    <td>300208</td>
+                    <td>RECUENTO ENDOTELIAL / MICROSCOPIA ESPECULAR COMPUTARIZADA </td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>300209</td>
+                    <td>TEST MIRADA PREFERENCIAL </td>
+                    <td>2800</td>
+                </tr>
+                <tr>
+                    <td>300210</td>
+                    <td>VIDEO ANGIOGRAFIA DIGITAL COMPUTADA UNI O BILATERAL </td>
+                    <td>13000</td>
+                </tr>
+                <tr>
+                    <td>300211</td>
+                    <td>TOMOGRAFIA DE COHERENCIA OPTICA - OCT </td>
+                    <td>15300</td>
+                </tr>
+                <tr>
+                    <td>300212</td>
+                    <td>INTERFEROMETRIA DE COHERENCIA PARCIAL UNI - IOL MASTER </td>
+                    <td>16800</td>
+                </tr>
+                <tr>
+                    <td>300213</td>
+                    <td>PAQUIMETRIA </td>
+                    <td>5400</td>
+                </tr>
+                <tr>
+                    <td>300214</td>
+                    <td>YAG LASER CAPSULOTOMIA/ IRIDOTOMIA </td>
+                    <td>35100</td>
+                </tr>
+                <tr>
+                    <td>300215</td>
+                    <td>LASER ARGON IRIDOTOMIA/TRABECULOPLASTIA/IRIDOPLASTIA </td>
+                    <td>29600</td>
+                </tr>
+                <tr>
+                    <td>300218</td>
+                    <td>SLT / TRABECULOPLASTIA SELECTIVA PARA GLAUCOMA </td>
+                    <td>35900</td>
+                </tr>
+                <tr>
+                    <td>300219</td>
+                    <td>ABERROMETRIA BILATERAL </td>
+                    <td>14900</td>
+                </tr>
+                <tr>
+                    <td>300220</td>
+                    <td>OCT CAMARA UNI</td>
+                    <td>25800</td>
+                </tr>
+                <tr>
+                    <td>300221</td>
+                    <td>ANGIO OCT BILATERAL</td>
+                    <td>51900</td>
+                </tr>
+                <tr>
+                    <td>310123</td>
+                    <td>RINO-SINUSO FIBROSCOPIA DIAGNOSTICA </td>
+                    <td>51400</td>
+                </tr>
+                <tr>
+                    <td>310124</td>
+                    <td>FARINGO LARINGO FIBROSCOPIA </td>
+                    <td>7100</td>
+                </tr>
+                <tr>
+                    <td>310130</td>
+                    <td>OTOEMISIONES ACUSTICAS </td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td>310131</td>
+                    <td>BERA - RESPUESTAS EVOCADAS TRONCO CEREBRAL </td>
+                    <td>8200</td>
+                </tr>
+                <tr>
+                    <td>330101</td>
+                    <td>CONSULTA PSICOLOGIA </td>
+                    <td>5200</td>
+                </tr>
+                <tr>
+                    <td>340209</td>
+                    <td>RADIOGRAFIA DE RAQUIS (COLUMNA) PRIMERA EXPOSICION B </td>
+                    <td>2700</td>
+                </tr>
+                <tr>
+                    <td>340210</td>
+                    <td>POR EXPOSICION SUBSIGUIENTE B </td>
+                    <td>1900</td>
+                </tr>
+                <tr>
+                    <td>340211</td>
+                    <td>RADIOGRAFIA DE HOMBRO HUMERO PELVIS CADERA Y FEMUR PRIMERA EXPOSICION A </td>
+                    <td>2700</td>
+                </tr>
+                <tr>
+                    <td>340212</td>
+                    <td>POR EXPOSICION SUBSIGUIENTE A </td>
+                    <td>1900</td>
+                </tr>
+                <tr>
+                    <td>340213</td>
+                    <td>RADIOGRAFIA DE CODO ANTEBRAZO MUÑECA MANO DEDOS RODILLA PIERNA TOBILLO Y PIE: DO</td>
+                    <td>2700</td>
+                </tr>
+                <tr>
+                    <td>340222</td>
+                    <td>ESPINOGRAMA FRENTE </td>
+                    <td>6500</td>
+                </tr>
+                <tr>
+                    <td>340223</td>
+                    <td>ESPINOGRAMA FRENTE Y PERFIL </td>
+                    <td>9900</td>
+                </tr>
+                <tr>
+                    <td>340224</td>
+                    <td>MEDICION MM II EN PLACA LARGA </td>
+                    <td>6400</td>
+                </tr>
+                <tr>
+                    <td>340225</td>
+                    <td>TELERADIOGRAFIA DENTAL </td>
+                    <td>5400</td>
+                </tr>
+                <tr>
+                    <td>340226</td>
+                    <td>PANORAMICO DENTAL </td>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <td>340227</td>
+                    <td>TRAZADO CEFALOMETRICO </td>
+                    <td>2700</td>
+                </tr>
+                <tr>
+                    <td>340301</td>
+                    <td>RADIOGRAFIA O TELERRADIOGRAFIA DE TORAX: CON O SIN TRAZADO DE DIAMETROS CARDIACO</td>
+                    <td>2700</td>
+                </tr>
+                <tr>
+                    <td>340302</td>
+                    <td>POR EXPOSICION SUBSIGUIENTE A </td>
+                    <td>1900</td>
+                </tr>
+                <tr>
+                    <td>340430</td>
+                    <td>VIDEOFLUOROSCOPIA DE DEGLUCION </td>
+                    <td>13000</td>
+                </tr>
+                <tr>
+                    <td>340502</td>
+                    <td>UROGRAMA EXCRETOR PIELOGRAFIA DESCENDENTE </td>
+                    <td>11200</td>
+                </tr>
+                <tr>
+                    <td>340503</td>
+                    <td>UROGRAMA EXCRETOR CON ESTUDIO VESICAL PRE Y POST MICCIONAL </td>
+                    <td>12400</td>
+                </tr>
+                <tr>
+                    <td>340507</td>
+                    <td>CISTOURETROGRAFIA MICCIONAL CISTOURETROGRAFIA ASCENDENTE </td>
+                    <td>9200</td>
+                </tr>
+                <tr>
+                    <td>341020</td>
+                    <td>TC HELICOIDAL DE CEREBRO </td>
+                    <td>35300</td>
+                </tr>
+                <tr>
+                    <td>341021</td>
+                    <td>TC HELICOIDAL DE SENOS PARANASALES </td>
+                    <td>35300</td>
+                </tr>
+                <tr>
+                    <td>341022</td>
+                    <td>TC HELICOIDAL DE TORAX </td>
+                    <td>35300</td>
+                </tr>
+                <tr>
+                    <td>341023</td>
+                    <td>TC HELICOIDAL ABDOMEN Y PELVIS </td>
+                    <td>39300</td>
+                </tr>
+                <tr>
+                    <td>341024</td>
+                    <td>TC HELICOIDAL RENAL PIELO TC </td>
+                    <td>39300</td>
+                </tr>
+                <tr>
+                    <td>341025</td>
+                    <td>TC HELICOIDAL DE COLUMNA </td>
+                    <td>35300</td>
+                </tr>
+                <tr>
+                    <td>341026</td>
+                    <td>TC HELICOIDAL SIGUIENTE TRAMO </td>
+                    <td>9100</td>
+                </tr>
+                <tr>
+                    <td>341027</td>
+                    <td>TC HELICOIDAL OTRAS REGIONES </td>
+                    <td>35300</td>
+                </tr>
+                <tr>
+                    <td>341028</td>
+                    <td>PUNCION BIOPSIA BAJO TC </td>
+                    <td>50300</td>
+                </tr>
+                <tr>
+                    <td>341030</td>
+                    <td>MULTICORTE POR REGION </td>
+                    <td>50300</td>
+                </tr>
+                <tr>
+                    <td>341031</td>
+                    <td>MULTICORTE ABDOMEN Y TORAX </td>
+                    <td>50300</td>
+                </tr>
+                <tr>
+                    <td>341032</td>
+                    <td>ANGIOTOMOGRAFIA MULTICORTE CORONARIA </td>
+                    <td>67800</td>
+                </tr>
+                <tr>
+                    <td>341033</td>
+                    <td>ANGIOTOMOGRAFIA MULTICORTE NO CORONARIA </td>
+                    <td>50900</td>
+                </tr>
+                <tr>
+                    <td>341034</td>
+                    <td>ENTERO TC </td>
+                    <td>50900</td>
+                </tr>
+                <tr>
+                    <td>341035</td>
+                    <td>COLONOSCOPIA VIRTUAL MULTICORTE </td>
+                    <td>50900</td>
+                </tr>
+                <tr>
+                    <td>341041</td>
+                    <td>TAC MULTICORTE CARDIACA </td>
+                    <td>67700</td>
+                </tr>
+                <tr>
+                    <td>341101</td>
+                    <td>RMN DE CEREBRO </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341102</td>
+                    <td>RMN DE CUELLO </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341103</td>
+                    <td>RMN COLUMNA CERVICAL/DORSAL O LUMBOSACRA </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341104</td>
+                    <td>RMN COLUMNA 2 TRAMO </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341105</td>
+                    <td>RMN COLUMNA 3 TRAMO </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341106</td>
+                    <td>RMN TORAX </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341107</td>
+                    <td>RMN ABDOMEN </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341108</td>
+                    <td>RMN RENAL PIELOGRAFIA </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341109</td>
+                    <td>RMN ALTO CAMPO DE PELVIS </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341110</td>
+                    <td>RMN ALTO CAMPO MIEMBROS SUPERIORES </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341111</td>
+                    <td>RMN ALTO CAMPO MIEMBROS INFERIORES </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341113</td>
+                    <td>RMN ALTO CAMPO DE HOMBRO </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341114</td>
+                    <td>RMN ALTO CAMPO MAMARIA </td>
+                    <td>26500</td>
+                </tr>
+                <tr>
+                    <td>341115</td>
+                    <td>RMN CARDIACA </td>
+                    <td>61600</td>
+                </tr>
+                <tr>
+                    <td>341116</td>
+                    <td>RMN OTRAS REGIONES </td>
+                    <td>25900</td>
+                </tr>
+                <tr>
+                    <td>341118</td>
+                    <td>RMN CUERPO ENTERO </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>341119</td>
+                    <td>RMN CEREBRO CON NEURONAVEGACION </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>341120</td>
+                    <td>ANGIORESONANCIA DE CEREBRO </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>341121</td>
+                    <td>ANGIORESONANCIA DE VASOS DE CUELLO </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>341122</td>
+                    <td>ANGIORESONANCIA DE TORAX </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>341123</td>
+                    <td>ANGIORESONANCIA DE ABDOMEN DE AORTA Y RAMAS INTRAAB </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>341124</td>
+                    <td>ANGIORESONANCIA DE MIEMBROS </td>
+                    <td>33300</td>
+                </tr>
+                <tr>
+                    <td>341125</td>
+                    <td>ARTRORESONANCIA </td>
+                    <td>23500</td>
+                </tr>
+                <tr>
+                    <td>341126</td>
+                    <td>ESPECTROSCOPIA </td>
+                    <td>26600</td>
+                </tr>
+                <tr>
+                    <td>341127</td>
+                    <td>DIFUSION </td>
+                    <td>26600</td>
+                </tr>
+                <tr>
+                    <td>341128</td>
+                    <td>PERFUSION </td>
+                    <td>26600</td>
+                </tr>
+                <tr>
+                    <td>341129</td>
+                    <td>VOLUMETRIA HEPATICA </td>
+                    <td>26600</td>
+                </tr>
+                <tr>
+                    <td>341130</td>
+                    <td>COLANGIORESONANCIA </td>
+                    <td>30900</td>
+                </tr>
+                <tr>
+                    <td>341132</td>
+                    <td>DEFECORESONANCIA </td>
+                    <td>33800</td>
+                </tr>
+                <tr>
+                    <td>341135</td>
+                    <td>RMN MULTPARAMETRICA DE PROSTATA </td>
+                    <td>57000</td>
+                </tr>
+                <tr>
+                    <td>341136</td>
+                    <td>RMN DE CODOS (UNI) </td>
+                    <td>25900</td>
+                </tr>
+                <tr>
+                    <td>341137</td>
+                    <td>RMN DE MUÑECA (UNILATERAL) </td>
+                    <td>25900</td>
+                </tr>
+                <tr>
+                    <td>341138</td>
+                    <td>RMN DE MANO (UNILATERAL) </td>
+                    <td>25900</td>
+                </tr>
+                <tr>
+                    <td>341139</td>
+                    <td>RMN DE RODILLA (UNILATERAL) </td>
+                    <td>25900</td>
+                </tr>
+                <tr>
+                    <td>341140</td>
+                    <td>RMN DE TOBILLO (UNLATERAL) </td>
+                    <td>25900</td>
+                </tr>
+                <tr>
+                    <td>341141</td>
+                    <td>RMN DE PIE (UNILATERAL) </td>
+                    <td>25900</td>
+                </tr>
+                <tr>
+                    <td>341142</td>
+                    <td>RMN 2DA REGION DE CEREBRO </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341143</td>
+                    <td>RMN 2DA REGION DE CUELLO </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341144</td>
+                    <td>RMN 2DA REGION COLUMNA CERVICAL </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341145</td>
+                    <td>RMN 2DA REGION COLUMNA DORSAL </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341146</td>
+                    <td>RMN 2DA REGION COLUMNA LUMBOSACRA </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341147</td>
+                    <td>RMN 2DA REGION DE TORAX </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341148</td>
+                    <td>RMN DE 2DA REGION ABDOMINOPELVIANA </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341149</td>
+                    <td>RMN 2DA REGION MMSS (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341150</td>
+                    <td>RMN 2DA REGION MIEMBROS INFERIORES (UNILATERAL/BILAERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341151</td>
+                    <td>RMN 2DA REGION HOMBRO (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341152</td>
+                    <td>RMN 2DA REGION DE CODO (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341153</td>
+                    <td>RMN 2DA REGION DE MUÑECA (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341154</td>
+                    <td>RMN 2DA REGION DE MANO (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341155</td>
+                    <td>RMN 2DA REGION DE TOBILLO (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341156</td>
+                    <td>RMN 2DA REGION DE PIE (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341157</td>
+                    <td>RMN 2DA REGION CARDIACA </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341158</td>
+                    <td>RMN 2DA REGION DE RODILLA (UNILATERAL) </td>
+                    <td>19600</td>
+                </tr>
+                <tr>
+                    <td>341160</td>
+                    <td>RMN FETAL </td>
+                    <td>56600</td>
+                </tr>
+                <tr>
+                    <td>341201</td>
+                    <td>DENSITOMETRIA OSEA </td>
+                    <td>10600</td>
+                </tr>
+                <tr>
+                    <td>341202</td>
+                    <td>DENSITOMETRIA OSEA DOS REGIONES </td>
+                    <td>13600</td>
+                </tr>
+                <tr>
+                    <td>341203</td>
+                    <td>DENSITOMETRIA OSEA CUERPO ENTERO </td>
+                    <td>21800</td>
+                </tr>
+                <tr>
+                    <td>360111</td>
+                    <td>ESTUDIO URODINAMICO COMPLETO </td>
+                    <td>24400</td>
+                </tr>
+                <tr>
+                    <td>360113</td>
+                    <td>UROFLUJOMETRIA </td>
+                    <td>5900</td>
+                </tr>
+                <tr>
+                    <td>420101</td>
+                    <td>CONSULTA MEDICA </td>
+                    <td>5600</td>
+                </tr>
+                <tr>
+                    <td>420110</td>
+                    <td>CONSULTA OFTALMOLOGICA VESTIDA </td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>420111</td>
+                    <td>CONSULTA ESPECIALIZADA EN AMBULATORIO </td>
+                    <td>5600</td>
+                </tr>
+                <tr>
+                    <td>420112</td>
+                    <td>CONSULTA ESPECIALIZADA NEUMONOLOGICA </td>
+                    <td>5800</td>
+                </tr>
+                <tr>
+                    <td>430115</td>
+                    <td>SALA RECUPERACION HASTA 2 HORAS </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>430116</td>
+                    <td>SALA RECUPERACION DE 2 A 8 HORAS </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>660664</td>
+                    <td>MICOLOGIA (Directo - ColoraciOn) </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>660665</td>
+                    <td>MICOLOGIA (Cultivo e IdentificaciOn) </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>663970</td>
+                    <td>COVID-19-SARS-COV-2,AC ANTI IGG </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>663976</td>
+                    <td>CORONAVIRUS(COVID-19)-SARS-COV-2 AG (ANTÍGENO) </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>663978</td>
+                    <td>COVID-19-SARS-COV-2,RT-PCR </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>668627</td>
+                    <td>PROTEINA del EPIDIDIMO HUMANO 4 (HE4) </td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="novedades">
+            <article>
+                <h2>A partir del 7/11/22 Dermatología no acepta Prevención Salud</h2>
+            </article>
+            <article class="consulta">
+                <h2>Valor de Consulta
+                    $5600
+                </h2>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerContent">
+            <h3>Información Profesionales</h3>
+            <p>Pagina dedicada a la Calidad y Seguridad del paciente</p>
+        </div>
+        <div class="footer-bottom">
+            <p>Pagina desarrollada por Germán Hidalgo &copy;2023</p>
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/geerhidalgo/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/Geer68"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

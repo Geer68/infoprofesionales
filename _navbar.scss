@@ -31,6 +31,13 @@ button {
     color: #252525;
     font-weight: bold;
     text-decoration: none;
+
+    button {
+      a {
+        text-decoration: none;
+        color: #252525;
+      }
+    }
     
   }
   
@@ -63,8 +70,11 @@ button {
     padding: 0 24px;
     height: 100%;
     opacity: 0.6;
+    text-decoration: none;
+    color: #252525;
     a {
       text-decoration: none;
+      color: #252525;
     }
     a:visited {
       color: inherit;

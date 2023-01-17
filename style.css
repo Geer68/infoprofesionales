@@ -31,6 +31,10 @@ button {
   font-weight: bold;
   text-decoration: none;
 }
+.navbar button a {
+  text-decoration: none;
+  color: #252525;
+}
 
 .burger {
   z-index: 3;
@@ -60,9 +64,12 @@ body.open .burger {
   padding: 0 24px;
   height: 100%;
   opacity: 0.6;
+  text-decoration: none;
+  color: #252525;
 }
 .button a {
   text-decoration: none;
+  color: #252525;
 }
 .button a:visited {
   color: inherit;
@@ -180,7 +187,6 @@ body.open .burger {
 
 .input {
   display: flex;
-  padding-top: 80px;
   max-width: 700px;
 }
 
@@ -240,6 +246,33 @@ body.open .burger {
   max-width: 80%;
   margin: 0px;
   min-width: 70%;
+}
+
+#myTableV {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgba(233, 232, 232, 0.918);
+  font-size: 15px;
+}
+#myTableV tr.header {
+  background-color: #ffd181;
+}
+#myTableV tr.header:hover {
+  background-color: #ffd181;
+}
+#myTableV tr {
+  border-bottom: 1px solid #ddd;
+}
+#myTableV tr:hover {
+  background-color: rgba(255, 209, 129, 0.1647058824);
+}
+#myTableV td, #myTableV th {
+  padding: 12px;
+}
+#myTableV td a, #myTableV th a {
+  text-decoration: none;
+  color: #106e5a;
+  font-weight: bold;
 }
 
 .footer {
@@ -368,52 +401,105 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+main {
+  margin-top: 80px;
+}
+
 .medicos {
   display: flex;
   flex-direction: row;
 }
-
-.novedades {
-  padding: 140px 0 30px 15px;
+.medicos .novedades {
+  padding: 0 0 30px 15px;
   display: flex;
   flex-direction: column;
   min-width: 250px;
   max-width: 400px;
 }
-.novedades article {
+.medicos .novedades article {
   align-items: center;
   background-color: #650404;
   border-radius: 0.8rem;
   text-align: center;
   margin-top: 15px;
 }
-.novedades article h2 {
+.medicos .novedades article h2 {
   font-size: x-large;
   color: white;
 }
-.novedades article p {
+.medicos .novedades article p {
   color: white;
 }
 
 .informacion {
-  padding: 80px;
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+.informacion .infoCont {
+  max-width: 68%;
 }
 .informacion article {
   background-color: #ffd181;
   border-radius: 0.8rem;
   text-align: center;
   margin-top: 15px;
+  padding: 1px;
 }
 .informacion article h2 {
   font-size: x-large;
-  color: white;
 }
 .informacion article p {
-  color: white;
   text-align: left;
+  margin-left: 10px;
 }
 .informacion article li {
   text-align: left;
+}
+.informacion .novedades {
+  padding: 20px 0 0 20px;
+  min-width: 250px;
+}
+.informacion .novedades article {
+  padding: 2px;
+  margin-top: 15px;
+}
+.informacion .novedades article h2 {
+  color: black;
+  margin-top: 10px;
+}
+.informacion .novedades article p {
+  text-align: center;
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.card-wrap a {
+  align-items: center;
+  background-color: #106e5a;
+  border-radius: 0.8rem;
+  text-align: center;
+  margin: 15px;
+  padding: 2px;
+  min-width: 185px;
+  max-width: 190px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+}
+.card-wrap a h2 {
+  margin: 0;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
